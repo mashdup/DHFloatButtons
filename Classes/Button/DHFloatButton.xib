@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHFloatButton">
+            <connections>
+                <outlet property="imageView" destination="fHr-Oe-a8T" id="fff-On-clZ"/>
+                <outlet property="titleLabel" destination="F4l-bo-Oh5" id="Hbd-6F-rCI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHr-Oe-a8T">
+                    <rect key="frame" x="13" y="10" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="fHr-Oe-a8T" secondAttribute="width" multiplier="1:1" id="6rE-uK-XPM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label sd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4l-bo-Oh5">
+                    <rect key="frame" x="0.0" y="70" width="86" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJm-BY-Wud">
+                    <rect key="frame" x="0.0" y="0.0" width="86" height="100"/>
+                    <connections>
+                        <action selector="didPressButton:" destination="-1" eventType="touchUpInside" id="YiZ-eb-y3Z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HJm-BY-Wud" secondAttribute="trailing" id="6SC-gl-XD4"/>
+                <constraint firstItem="fHr-Oe-a8T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Cyr-r7-ksE"/>
+                <constraint firstItem="fHr-Oe-a8T" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="Utr-Tt-D7Z"/>
+                <constraint firstItem="F4l-bo-Oh5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Yrg-bE-1tw"/>
+                <constraint firstAttribute="bottom" secondItem="HJm-BY-Wud" secondAttribute="bottom" id="aax-lh-KFB"/>
+                <constraint firstAttribute="bottom" secondItem="F4l-bo-Oh5" secondAttribute="bottom" id="dbT-qs-ebH"/>
+                <constraint firstItem="fHr-Oe-a8T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dkF-r1-l0A"/>
+                <constraint firstItem="HJm-BY-Wud" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eAx-xP-YdX"/>
+                <constraint firstItem="HJm-BY-Wud" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jgC-ld-OBR"/>
+                <constraint firstItem="F4l-bo-Oh5" firstAttribute="top" secondItem="fHr-Oe-a8T" secondAttribute="bottom" id="wJX-Hh-tsR"/>
+                <constraint firstItem="F4l-bo-Oh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zZG-Jx-PBr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-120" y="-231"/>
+        </view>
+    </objects>
+</document>

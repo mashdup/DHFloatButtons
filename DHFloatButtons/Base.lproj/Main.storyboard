@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +14,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz3-du-ACi">
+                                <rect key="frame" x="16" y="20" width="57" height="30"/>
+                                <state key="normal" title="Top Left"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j63-j3-e3P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brk-aj-d2P">
+                                <rect key="frame" x="164" y="328.5" width="47" height="30"/>
+                                <state key="normal" title="Middle"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeg-r9-6Mn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6a-wo-0V4">
+                                <rect key="frame" x="278" y="617" width="81" height="30"/>
+                                <state key="normal" title="Bottom Left"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xn2-Gy-t7D"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="n6a-wo-0V4" secondAttribute="trailing" id="MOP-8t-SlI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="n6a-wo-0V4" secondAttribute="bottom" constant="20" id="RUG-vZ-0kJ"/>
+                            <constraint firstItem="brk-aj-d2P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xkd-n2-IUS"/>
+                            <constraint firstItem="brk-aj-d2P" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ddN-HF-QjN"/>
+                            <constraint firstItem="Sz3-du-ACi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jOq-Wg-Fu0"/>
+                            <constraint firstAttribute="topMargin" secondItem="Sz3-du-ACi" secondAttribute="top" id="vhc-oN-CVL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

@@ -13,6 +13,12 @@
 		51879C592037218C00D628E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51879C582037218C00D628E9 /* Assets.xcassets */; };
 		51879C5C2037218C00D628E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51879C5A2037218C00D628E9 /* LaunchScreen.storyboard */; };
 		51879C5F2037218C00D628E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51879C5E2037218C00D628E9 /* main.m */; };
+		51879C782037220E00D628E9 /* DHFloatButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 51879C722037220D00D628E9 /* DHFloatButtons.m */; };
+		51879C792037220E00D628E9 /* DHFloatButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51879C732037220E00D628E9 /* DHFloatButton.xib */; };
+		51879C7A2037220E00D628E9 /* DHFloatButtons.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51879C752037220E00D628E9 /* DHFloatButtons.xib */; };
+		51879C7B2037220E00D628E9 /* DHFloatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 51879C772037220E00D628E9 /* DHFloatButton.m */; };
+		51879C7E2037221500D628E9 /* DHFloatButtonAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 51879C7C2037221500D628E9 /* DHFloatButtonAppearance.m */; };
+		51879C812037221E00D628E9 /* UIImage+DHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 51879C7F2037221E00D628E9 /* UIImage+DHUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,16 @@
 		51879C5B2037218C00D628E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51879C5D2037218C00D628E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51879C5E2037218C00D628E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51879C722037220D00D628E9 /* DHFloatButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFloatButtons.m; sourceTree = "<group>"; };
+		51879C732037220E00D628E9 /* DHFloatButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHFloatButton.xib; sourceTree = "<group>"; };
+		51879C742037220E00D628E9 /* DHFloatButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFloatButtons.h; sourceTree = "<group>"; };
+		51879C752037220E00D628E9 /* DHFloatButtons.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHFloatButtons.xib; sourceTree = "<group>"; };
+		51879C762037220E00D628E9 /* DHFloatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFloatButton.h; sourceTree = "<group>"; };
+		51879C772037220E00D628E9 /* DHFloatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFloatButton.m; sourceTree = "<group>"; };
+		51879C7C2037221500D628E9 /* DHFloatButtonAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFloatButtonAppearance.m; sourceTree = "<group>"; };
+		51879C7D2037221500D628E9 /* DHFloatButtonAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFloatButtonAppearance.h; sourceTree = "<group>"; };
+		51879C7F2037221E00D628E9 /* UIImage+DHUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DHUtils.m"; sourceTree = "<group>"; };
+		51879C802037221E00D628E9 /* UIImage+DHUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DHUtils.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,7 @@
 		51879C432037218C00D628E9 = {
 			isa = PBXGroup;
 			children = (
+				51879C65203721A600D628E9 /* Classes */,
 				51879C4E2037218C00D628E9 /* DHFloatButtons */,
 				51879C4D2037218C00D628E9 /* Products */,
 			);
@@ -69,6 +86,47 @@
 				51879C5E2037218C00D628E9 /* main.m */,
 			);
 			path = DHFloatButtons;
+			sourceTree = "<group>";
+		};
+		51879C65203721A600D628E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				51879C842037225100D628E9 /* Category */,
+				51879C832037224400D628E9 /* Button */,
+				51879C822037223300D628E9 /* Appearance */,
+				51879C742037220E00D628E9 /* DHFloatButtons.h */,
+				51879C722037220D00D628E9 /* DHFloatButtons.m */,
+				51879C752037220E00D628E9 /* DHFloatButtons.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		51879C822037223300D628E9 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				51879C7D2037221500D628E9 /* DHFloatButtonAppearance.h */,
+				51879C7C2037221500D628E9 /* DHFloatButtonAppearance.m */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		51879C832037224400D628E9 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				51879C762037220E00D628E9 /* DHFloatButton.h */,
+				51879C772037220E00D628E9 /* DHFloatButton.m */,
+				51879C732037220E00D628E9 /* DHFloatButton.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		51879C842037225100D628E9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				51879C802037221E00D628E9 /* UIImage+DHUtils.h */,
+				51879C7F2037221E00D628E9 /* UIImage+DHUtils.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51879C792037220E00D628E9 /* DHFloatButton.xib in Resources */,
 				51879C5C2037218C00D628E9 /* LaunchScreen.storyboard in Resources */,
 				51879C592037218C00D628E9 /* Assets.xcassets in Resources */,
 				51879C572037218C00D628E9 /* Main.storyboard in Resources */,
+				51879C7A2037220E00D628E9 /* DHFloatButtons.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51879C812037221E00D628E9 /* UIImage+DHUtils.m in Sources */,
+				51879C7B2037220E00D628E9 /* DHFloatButton.m in Sources */,
+				51879C782037220E00D628E9 /* DHFloatButtons.m in Sources */,
+				51879C7E2037221500D628E9 /* DHFloatButtonAppearance.m in Sources */,
 				51879C542037218C00D628E9 /* ViewController.m in Sources */,
 				51879C5F2037218C00D628E9 /* main.m in Sources */,
 				51879C512037218C00D628E9 /* AppDelegate.m in Sources */,
