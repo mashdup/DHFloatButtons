@@ -15,6 +15,7 @@ The maximum buttons in a row is easily set using the show method **showFrom:with
 Usage
 --------------
 
+  ```objective-c
   DHFloatButtonItem *button = [DHFloatButtonItem new];
     button.buttonImage = [UIImage imageNamed:@"favouriteIcon"];
     button.buttonTitle = @"Button 1";
@@ -45,6 +46,7 @@ Usage
     }];
 
     [buttons showFrom:sender withButtons:@[button,button2,button3] numberPerRow:3];
+    ```
 
 Licence
 -----------
