@@ -16,7 +16,7 @@ Usage
 --------------
 
   ```objective-c
-  DHFloatButtonItem *button = [DHFloatButtonItem new];
+    DHFloatButtonItem *button = [DHFloatButtonItem new];
     button.buttonImage = [UIImage imageNamed:@"favouriteIcon"];
     button.buttonTitle = @"Button 1";
     DHFloatButtonItem *button2 = [DHFloatButtonItem new];
